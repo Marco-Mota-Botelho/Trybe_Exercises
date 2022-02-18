@@ -1,0 +1,8 @@
+Internet
+Unix
+Bash
+Javascript
+Node
+React
+Autogestao
+Liderança
