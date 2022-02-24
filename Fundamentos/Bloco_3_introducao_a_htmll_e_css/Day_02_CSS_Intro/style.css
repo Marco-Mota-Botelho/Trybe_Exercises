@@ -1,0 +1,42 @@
+h1 {
+    size: 65px;
+    color: orange;
+    font-family: sans-serif;
+  }
+
+  ul {
+    font-style: oblique;
+  }
+
+  .backgroundStyle {
+    background-color: green;
+    width: fit-content;
+  }
+
+  /* I believe this will makes it a bit uglier, with a weird white stripe dividing both, but we haven't learned about divs yet */
+
+  p{
+    font-weight: 600;
+    font-size: 3em;
+    text-align: center;
+  }
+
+  body{
+      font-size: 16px;
+      line-height: 2;
+  }
+
+  #listBackground-yellow{
+      background-color: yellow;
+      width: fit-content;
+  }
+
+  #listBackground-red{
+      background-color: red;
+      width: fit-content;
+  }
+
+  #listBackground-brown{
+      background-color: brown;
+      width: fit-content;
+  }
