@@ -1,30 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>HTML</title>
     <style>
-        h1{
-            size: 65px;
-            color: orange;
-        }
-        ul{
-            background-color: red;
-        }
-        /*I left out this ul even though it won't show.*/
-        .backgroundStyle{
-            background-color: green;
-        }
-        /* I believe this will makes it a bit uglier, with a weird white stripe dividing both, but we haven't learned about divs yet */
+      h1 {
+        size: 65px;
+        color: orange;
+        font-family: sans-serif;
+      }
+
+      ul {
+        font-style: oblique;
+      }
+
+      .backgroundStyle {
+        background-color: green;
+        width: fit-content;
+      }
+
+      /* I believe this will makes it a bit uglier, with a weird white stripe dividing both, but we haven't learned about divs yet */
+
+      p{
+        font-weight: 600;
+        font-size: 3em;
+        text-align: center;
+      }
+
+      body{
+          font-size: 16px;
+          line-height: 2;
+      }
+
+      #listBackground-yellow{
+          background-color: yellow;
+          width: fit-content;
+      }
+
+      #listBackground-red{
+          background-color: red;
+          width: fit-content;
+      }
+
+      #listBackground-brown{
+          background-color: brown;
+          width: fit-content;
+      }
+
     </style>
   </head>
   <body>
     <h1>Exercícios 3.2</h1>
     <p class="backgroundStyle">Qual é a sua cor favorita?</p>
-    <ul class="backgroundStyle">
-      <li>Amarelo</li>
-      <li>Vermelho</li>
-      <li>Marrom</li>
+    <div>
+    <ul>
+      <li id="listBackground-yellow">Amarelo</li>
+      <li id="listBackground-red">Vermelho</li>
+      <li id="listBackground-brown">Marrom</li>
     </ul>
+</div>
   </body>
 </html>
