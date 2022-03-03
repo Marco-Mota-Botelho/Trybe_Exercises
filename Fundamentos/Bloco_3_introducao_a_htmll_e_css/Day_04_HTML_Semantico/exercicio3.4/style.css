@@ -25,3 +25,22 @@ main{
     justify-items: center;
     height: 300px;
 }
+
+.sidePosition{
+    position: absolute;
+    left: 50%;
+    bottom: 55%;
+    border-style: solid;
+    height: 100px;
+    width: 300px;
+    border-radius: 25%;
+    border-color: rgb(141, 26, 26);
+    box-shadow: 5px 10px rgb(92, 28, 28);
+    text-align: center;
+    font-size: 30px;
+}
+
+.sidePosition a{
+    color: orange;
+    margin-top: 3px;
+}
