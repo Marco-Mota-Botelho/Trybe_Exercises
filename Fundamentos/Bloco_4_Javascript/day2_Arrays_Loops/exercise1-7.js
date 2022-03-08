@@ -4,6 +4,10 @@ let sumOfNumbers = 0;
 
 // console.log(numbers);
 
-for (i= 0; i < numbers.length; i++) {
-  console.log(numbers[i]);
+for (i = 0; i < numbers.length; i++) {
+  // console.log(numbers[i]);
+  sumOfNumbers += numbers[i];
 }
+
+let avarageOfNumbers = sumOfNumbers / numbers.length;
+console.log(sumOfNumbers);
