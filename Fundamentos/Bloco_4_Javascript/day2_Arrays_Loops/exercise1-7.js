@@ -11,3 +11,7 @@ for (i = 0; i < numbers.length; i++) {
 
 let avarageOfNumbers = sumOfNumbers / numbers.length;
 console.log(sumOfNumbers);
+
+if (avarageOfNumbers > 20){
+  console.log('Valor maior que 20');
+} else console.log('Valor menor ou igual a 20');
