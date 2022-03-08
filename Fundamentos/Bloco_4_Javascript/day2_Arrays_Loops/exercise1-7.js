@@ -3,6 +3,7 @@ let i;
 let howManyOdds = 0;
 let sumOfNumbers = 0;
 let comparator = numbers[0];
+let comparatorSmaller = numbers[0];
 
 // console.log(numbers);
 
@@ -34,3 +35,11 @@ if (howManyOdds > 0) {
 } else console.log('nenhum valor Ímpar encontrado');
 
 console.log(comparator);
+
+for (i = 1; i < numbers.length; i++) {
+  if (comparatorSmaller > numbers[i]) {
+    comparatorSmaller = numbers[i];
+  }
+}
+
+console.log(comparatorSmaller);
