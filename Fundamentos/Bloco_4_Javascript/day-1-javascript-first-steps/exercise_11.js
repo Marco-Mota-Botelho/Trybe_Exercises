@@ -1,4 +1,4 @@
-const salary = 3000;
+const salary = 2600;
 let inss, baseSalary, finalSalary, IR;
 
 if (salary <= 1556.94) {
