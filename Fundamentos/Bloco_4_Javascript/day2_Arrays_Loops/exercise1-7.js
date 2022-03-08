@@ -4,6 +4,7 @@ let howManyOdds = 0;
 let sumOfNumbers = 0;
 let comparator = numbers[0];
 let comparatorSmaller = numbers[0];
+let newNumbers = new Array();
 
 // console.log(numbers);
 
@@ -32,7 +33,7 @@ for (i = 0; i < numbers.length; i++) {
 }
 if (howManyOdds > 0) {
   console.log(howManyOdds);
-} else console.log('nenhum valor Ímpar encontrado');
+} else console.log("nenhum valor Ímpar encontrado");
 
 console.log(comparator);
 
@@ -43,3 +44,9 @@ for (i = 1; i < numbers.length; i++) {
 }
 
 console.log(comparatorSmaller);
+
+for (i = 0; i < 25; i++) {
+  newNumbers[i] = i + 1;
+}
+
+console.log(newNumbers);
