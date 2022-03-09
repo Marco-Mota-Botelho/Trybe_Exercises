@@ -10,7 +10,7 @@ for (i = 2; i <= 10; i += 1) {
 
 console.log(factorial);
 
-//Exercise 2 invert a string
+// //Exercise 2 invert a string
 
 let word = "tryber";
 let splitWord = word.split("");
@@ -46,3 +46,21 @@ for (let word of arrayOfWords) {
 }
 console.log(biggerWord);
 console.log(smallerWord);
+
+// A code to find the biggest prime between 0 and 50
+
+let number = 50;
+let hasFound = true;
+
+  for(number; number > 1; number-= 1 ){
+    for(i = 2; i < number; i+= 1){
+      if (number % i == 0 && i !== number){
+        hasFound = false;
+        break
+      } else hasFound = true;
+    }
+
+    if (hasFound) break;
+  }
+  console.log(number);
+
