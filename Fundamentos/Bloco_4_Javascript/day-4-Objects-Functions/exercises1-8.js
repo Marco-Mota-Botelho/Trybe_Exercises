@@ -5,3 +5,11 @@ let info = {
   };
 
   console.log('Bem-vinda, ' + info.personagem);
+
+  info['recorrente'] = 'Sim';
+
+  console.table(info);
+
+  for(let key in info){
+      console.log(key);
+  }
