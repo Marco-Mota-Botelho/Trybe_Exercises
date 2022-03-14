@@ -1,6 +1,8 @@
 const salary = 2600;
+// Aqui to colocando o salario bruto pra saber qual é o salario do cara
 let inss, baseSalary, finalSalary, IR;
 
+//Esse if vai checar quanto de inss a pessoal deve pagar
 if (salary <= 1556.94) {
   inss = salary * 0.08;
 } else if (salary >= 1556.95 && salary <= 2594.92) {

@@ -1,4 +1,4 @@
-const piece = "PeÃO";
+const piece = "Rainha";
 
 switch (piece.toLowerCase()) {
   case "bispo":
