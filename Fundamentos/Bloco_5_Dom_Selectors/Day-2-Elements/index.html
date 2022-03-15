@@ -99,6 +99,14 @@
         "Nine",
         "Ten",
       ];
+      let listedNumbers = document.createElement("ul");
+
+      for (let number of listNumbers) {
+        let numberListItem = document.createElement("li");
+        numberListItem.innerText = number;
+        listedNumbers.appendChild(numberListItem);
+      }
+      rightSection.appendChild(listedNumbers);
     </script>
   </body>
 </html>
