@@ -57,31 +57,48 @@
   </head>
   <body>
     <script>
-        let body = document.querySelector('body');
-      let title = document.createElement('h1');
-      title.innerText='Exercício 5.2 - JavaScript DOM'
+      let body = document.querySelector("body");
+      let title = document.createElement("h1");
+      title.innerText = "Exercício 5.2 - JavaScript DOM";
       body.appendChild(title);
 
-      let main = document.createElement('main');
-      main.className = 'main-content';
+      let main = document.createElement("main");
+      main.className = "main-content";
       body.appendChild(main);
 
-      let section = document.createElement('section');
-      section.className = 'center-content';
+      let section = document.createElement("section");
+      section.className = "center-content";
       main.appendChild(section);
 
-      let p = document.createElement('p');
-      p.innerText= 'Olá, sou estudante da trybe.';
+      let p = document.createElement("p");
+      p.innerText = "Olá, sou estudante da trybe.";
       section.appendChild(p);
-      
-      let leftSection = document.createElement('section');
-      leftSection.className = 'left-content';
+
+      let leftSection = document.createElement("section");
+      leftSection.className = "left-content";
       main.appendChild(leftSection);
 
-      let rightSection = document.createElement('section');
-      rightSection.className = 'right-content';
+      let rightSection = document.createElement("section");
+      rightSection.className = "right-content";
       main.appendChild(rightSection);
 
+      let leftImg = document.createElement("img");
+      leftImg.src = "https://picsum.photos/200";
+      leftImg.className = "small-image";
+      leftSection.appendChild(leftImg);
+
+      let listNumbers = [
+        "One",
+        "Two",
+        "Three",
+        "Four",
+        "Five",
+        "Six",
+        "Seven",
+        "Eight",
+        "Nine",
+        "Ten",
+      ];
     </script>
   </body>
 </html>
