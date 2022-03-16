@@ -109,17 +109,31 @@ const daysList = document.querySelectorAll(".day");
 let fontSize;
 
 function zoomIn(eventTarget) {
-  fontSize = eventTarget.target.style.fontSize
+  fontSize = eventTarget.target.style.fontSize;
   eventTarget.target.style.fontSize = "xx-large";
-  
 }
 
-function zoomOut(eventTarget){
-
-  eventTarget.target.style.fontSize = fontSize
+function zoomOut(eventTarget) {
+  eventTarget.target.style.fontSize = fontSize;
 }
 
-for(i = 0; i < daysList.length; i++){
-  daysList[i].addEventListener('mouseover', zoomIn);
-  daysList[i].addEventListener('mouseleave', zoomOut);
+for (i = 0; i < daysList.length; i++) {
+  daysList[i].addEventListener("mouseover", zoomIn);
+  daysList[i].addEventListener("mouseleave", zoomOut);
+}
+
+let myTasks = document.querySelector("#task-input");
+const myTaskList = document.querySelector(".my-tasks");
+const taskBtn = document.querySelector("#btn-add");
+taskBtn.addEventListener(
+  "click",
+  addNewTasks
+);
+function addNewTasks() {
+  let taskName = document.getElementById('task-input').value
+  let newTask = document.createElement("span");
+  console.log = taskName;
+  newTask.innerText = taskName;
+  newTask.className = "task";
+  myTaskList.appendChild(newTask);
 }

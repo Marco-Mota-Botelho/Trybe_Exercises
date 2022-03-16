@@ -118,6 +118,9 @@
     letter-spacing: 3px;
   }
   
+  .task{
+    display: block;
+  }
   .task-list {
     margin-top: 20px;
   }
