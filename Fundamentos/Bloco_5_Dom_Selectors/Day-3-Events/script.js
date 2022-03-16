@@ -18,8 +18,9 @@ function createDaysOfTheWeek() {
   }
 }
 
+const monthDaysList = document.querySelector("#days");
+
 function createDaysOfTheMonth() {
-  const monthDaysList = document.querySelector("#days");
   const dezDaysList = [
     29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
     20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
@@ -61,42 +62,64 @@ let ischangedFriday = false;
 
 function changeBackgroundColor() {
   const holidaysInMonth = document.querySelectorAll(".holiday");
-  if( !ischanged){
-  holidaysInMonth.forEach(holiday => holiday.style.backgroundColor = 'red');
-  ischanged = true;
+  if (!ischanged) {
+    holidaysInMonth.forEach(
+      (holiday) => (holiday.style.backgroundColor = "red")
+    );
+    ischanged = true;
   } else {
-    holidaysInMonth.forEach(holiday => holiday.style.backgroundColor = 'rgb(238,238,238)');
+    holidaysInMonth.forEach(
+      (holiday) => (holiday.style.backgroundColor = "rgb(238,238,238)")
+    );
     ischanged = false;
   }
 }
 
 function createFridayBtn(friday) {
-    let fridayBtn = document.createElement("button");
-    fridayBtn.id = "btn-friday";
-    fridayBtn.innerText = friday;
-  
-    document.querySelector(".buttons-container").appendChild(fridayBtn);
-  }
+  let fridayBtn = document.createElement("button");
+  fridayBtn.id = "btn-friday";
+  fridayBtn.innerText = friday;
 
-  createFridayBtn('Friday')
-  const fridaysInMonth = document.querySelectorAll(".friday");
-  let nextFriday = [];
-  for(let i = 0; i < fridaysInMonth.length; i++){
-      nextFriday[i]= fridaysInMonth[i].innerText
-  }
+  document.querySelector(".buttons-container").appendChild(fridayBtn);
+}
 
-  function changeFridayText(){
-    console.log(nextFriday);
-    if( !ischanged){
-    fridaysInMonth.forEach(friday => friday.innerText = 'Sextou Galeraaa!');
+createFridayBtn("Friday");
+const fridaysInMonth = document.querySelectorAll(".friday");
+let nextFriday = [];
+for (let i = 0; i < fridaysInMonth.length; i++) {
+  nextFriday[i] = fridaysInMonth[i].innerText;
+}
+
+function changeFridayText() {
+  if (!ischanged) {
+    fridaysInMonth.forEach((friday) => (friday.innerText = "Sextou Galeraaa!"));
     ischanged = true;
-    } else {
-      for (let i = 0; i < nextFriday.length; i++){
-          fridaysInMonth[i].innerText = nextFriday[i];
-      }
-      ischanged = false;
+  } else {
+    for (let i = 0; i < nextFriday.length; i++) {
+      fridaysInMonth[i].innerText = nextFriday[i];
     }
+    ischanged = false;
   }
+}
 
-  const fridayBtn = document.querySelector('#btn-friday');
-  fridayBtn.addEventListener("click", changeFridayText);
+const fridayBtn = document.querySelector("#btn-friday");
+fridayBtn.addEventListener("click", changeFridayText);
+
+const daysList = document.querySelectorAll(".day");
+let fontSize;
+
+function zoomIn(eventTarget) {
+  fontSize = eventTarget.target.style.fontSize
+  eventTarget.target.style.fontSize = "xx-large";
+  
+}
+
+function zoomOut(eventTarget){
+
+  eventTarget.target.style.fontSize = fontSize
+}
+
+for(i = 0; i < daysList.length; i++){
+  daysList[i].addEventListener('mouseover', zoomIn);
+  daysList[i].addEventListener('mouseleave', zoomOut);
+}
