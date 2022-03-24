@@ -125,15 +125,32 @@ for (i = 0; i < daysList.length; i++) {
 let myTasks = document.querySelector("#task-input");
 const myTaskList = document.querySelector(".my-tasks");
 const taskBtn = document.querySelector("#btn-add");
-taskBtn.addEventListener(
-  "click",
-  addNewTasks
-);
+taskBtn.addEventListener("click", addNewTasks);
+let isThereTaskList = false;
 function addNewTasks() {
-  let taskName = document.getElementById('task-input').value
+  let newColor = `rgb(${Math.random() * 256}, ${Math.random() * 256}, ${
+    Math.random() * 256
+  })`;
+  let taskName = document.getElementById("task-input").value;
   let newTask = document.createElement("span");
-  console.log = taskName;
+  console.log  (taskName);
   newTask.innerText = taskName;
-  newTask.className = "task";
+  newTask.className = 'task'
+  newTask.style.background = newColor;
   myTaskList.appendChild(newTask);
+  isThereTaskList = true;
 }
+
+let isSelected = false;
+
+if(isThereTaskList){
+  let theTaskList = document.querySelectorAll('.task')
+  console.log(theTaskList);
+}
+function selectTask(eventTarget) {
+  eventTarget.target.className += " selected";
+  console.log(eventTarget.target);
+  isSelected = true;
+}
+
+
