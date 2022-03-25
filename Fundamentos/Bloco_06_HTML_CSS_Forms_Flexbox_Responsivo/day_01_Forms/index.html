@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Trybe Trips!</h1>
+
+    <form action="" method="get">
+      <p class="paragraphs">Nome completo:</p>
+      <input
+        type="text"
+        maxlength="40"
+        minlength="10"
+        id="input-name"
+        name="Name"
+        placeholder="Digite seu nome aqui"
+        required
+      />
+      <br />
+      <p class="paragraphs">Email:</p>
+      <input
+        type="text"
+        maxlength="50"
+        minlength="10"
+        id="input-email"
+        name="Email"
+        placeholder="Digite seu email aqui"
+        required
+      />
+      <br />
+      <label for="input-option1" 
+        ><input name="Option" type="radio" id="input-option1"value="Cidade" required />
+        <option name="destination" value="Cidade">Cidade</option>
+      </label>
+      <label for="input-option2" 
+        ><input name="Option" type="radio" id="input-option2" value="Campo"required />
+        <option name="destination" value="Campo">Campo</option>
+      </label>
+      <label for="input-option3" 
+        ><input  name="Option" type="radio" id="input-option3" value="Praia"required />
+        <option name="destination" value="Praia">Praia</option>
+      </label>
+      <label for="input-option4" 
+        ><input name="Option" type="radio" id="input-option4" value="Montanhas" required />
+        <option name="destination" value="Montanhas">Montanhas</option>
+      </label>
+      <br />
+
+      <p class="paragraphs">
+        Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso
+        TrybeTrip?
+      </p>
+      <br />
+      <textarea
+        name="reason"
+        id="input-reason"
+        cols="63"
+        rows="10"
+        maxlength="500"
+      ></textarea>
+      <br />
+      <br />
+      
+      
+      <label for="input-mailList"><input  checked type="checkbox" name="mail-list" value="true" id="input-mailList">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</input></label>
+      <br>
+      <label for="input-agreement"><input required type="checkbox" name="agreement" value="true" id="input-agreement">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</input></label>
+      <br>
+      <button id="sendBtn">Enviar</button>
+    </form>
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
