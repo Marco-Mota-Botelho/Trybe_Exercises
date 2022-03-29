@@ -52,10 +52,7 @@ header h3{
   background-color: rgb(241,241,241);
 }
 
-h4{
-  text-align: center;
-  color: rgb(141,144,152);
-  }
+
 
 .accordion-button:not(.collapsed)::after {
 justify-content: center;
@@ -66,6 +63,10 @@ background-image: none;
   display: none;
 }
 
+h4{
+  text-align: center;
+  color: rgb(141,144,152);
+  }
 .header-img {
   width: 70px;
 }
@@ -80,11 +81,6 @@ footer {
   padding-top: 10px;
   border-radius: 5%;
   border-top: solid #d8d8d8;
-}
-
-
-body{
-  background-color:;
 }
 
 .gallery-img {
